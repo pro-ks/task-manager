@@ -1,10 +1,11 @@
 <?php
 /*
 Plugin Name: Личный таск-менеджер
-Description: Простой таск-менеджер для управления задачами через шорткод <code>[task_manager]</code>.
+Description: Плагин "Личный таск-менеджер" предоставляет простой и удобный способ организации вашего списка задач прямо на любой странице через шорткод  <code>[task_manager]</code>. С его помощью вы можете создавать, редактировать и удалять задачи, а также устанавливать различные параметры для управления вашими задачами. 
 Version: 1.0
 Author: KosTeams
 Author URI: http://t.me/kosteams
+Plugin URI: https://github.com/pro-ks/task-manager
 */
 
 // Проверка на прямой доступ
@@ -85,4 +86,3 @@ function task_manager_plugin_settings_link( $links ) {
     return $links;
 }
 add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'task_manager_plugin_settings_link' );
-
